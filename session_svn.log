@@ -1,0 +1,112 @@
+  544  svnadmin --version
+  545  cd ..
+  546  mkdir lab6_svn
+  547  cd lab6_svn/
+  548  svnadmin --version
+  549  svnadmin create /var/svn/repos
+  550  svnadmin create /Users/slavaP/svnroot
+  551  svn checkout file:///Users/slavaP/svnroot
+  552  svnadmin create Users/slavaP/svnroot
+  553  svnadmin create Users/slavaP/svnroot/Lab6
+  554  mkdir Users/slavaP/svnroot/Lab6
+  555  mkdir Users/slavaP/svnroot
+  556  mkdir var/svn/repos
+  557  mkdir var/svn/repos/Lab6
+  558  svnadmin create var/svn/repos/Lab6
+  559  sudo mkdir var/svn/repos/Lab6
+  560  svn checkout https://github.com/VPoshelyuk/CISC3140-Lab6-svn
+  561  ls
+  562  cd CISC3140-Lab6-svn/
+  563  touch HelloWorld.js
+  564  vim HelloWorld.js
+  565  svn add HelloWorld.js 
+  566  svn update
+  567  svn commit -m 'add HelloWorld.js'
+  568  svn up trunk
+  569  ls
+  570  cd trunk/
+  571  svn cleanup
+  572  ls
+  573  cd ..
+  574  ls
+  575  svn update
+  576  cd ..
+  577  open .
+  578  svn co --depth empty git@github.com:VPoshelyuk/CISC3140-Lab6-svn.git
+  579  svn co --depth empty https://github.com/VPoshelyuk/CISC3140-Lab6-svn
+  580  ls
+  581  cd CISC3140-Lab6-svn/
+  582  svn up trunk
+  583  svn up --depth empty branches
+  584  svn cleanup
+  585  svn up --depth empty branches
+  586  svn update
+  587  svn cleanup
+  588  svn update
+  589  svn up trunk
+  590  svn up --depth empty branches
+  591  svn cleanup
+  592  svn up --depth empty branches
+  593  cd ../
+  594  open ,
+  595  open .
+  596  svnadmin create /var/svn/repos
+  597  svnadmin create
+  598  svnadmin create Users/slavaP/svnroot
+  599  svnadmin create /Users/slavaP/svnroot
+  600  svnadmin create Users/slavaP/svnroot
+  601  cd ~
+  602  ls
+  603  cd svnroot/
+  604  ls
+  605  cd ../
+  606  mkdir CISC3140-Lab6-svn
+  607  cd Desktop/CISC3140/Lab6/
+  608  svnadmin create ~/ISC3140-Lab6-svn
+  609  svnadmin create ~/CISC3140-Lab6-svn
+  610  svn checkout ~/CISC3140-Lab6-svn/
+  611  cd ~/CISC3140-Lab6-svn/
+  612  ls
+  613  svn checkout
+  614  svn add .
+  615  svn commit -m "initial commit"
+  616  cd ~/Desktop/CISC3140/Lab6/
+  617  cd ../
+  618  ls
+  619  cd Lab6_svn
+  620  ld
+  621  ls
+  622  svn co --depth empty https://github.com/VPoshelyuk/CISC3140-Lab6-svn.git
+  623  cd CISC3140-Lab6-svn.git/
+  624  svn up trunk
+  625  svn up --depth empty branches
+  626  svn cleanup
+  627  svn up --depth empty branches
+  628  svn up trunk
+  629  svn copy trunk branches/master
+  630  cd ..
+  631  open .
+  632  svn co --depth empty https://github.com/VPoshelyuk/CISC3140-Lab6-svn.git
+  633  svn up trunk
+  634  cd CISC3140-Lab6-svn.git/
+  635  svn up trunk
+  636  svn up --depth empty branches
+  637  ls
+  638  cd branches/
+  639  ls
+  640  svn copy trunk branches/master
+  641  cd ..
+  642  svn copy trunk branches/main
+  643  svn copy trunk branches/master
+  644  cd branches/
+  645  ls
+  646  cd master/
+  647  svn commit -m 'Added main topic branch'
+  648  svn status
+  649  touch HelloWorld.js
+  650  vim HelloWorld.js 
+  651  svn add HelloWorld.js 
+  652  svn commit -m "add HelloWorld.js"
+  653  ls
+  654  history 100
+  655  history 200
