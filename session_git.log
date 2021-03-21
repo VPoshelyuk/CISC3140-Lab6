@@ -1,0 +1,25 @@
+  510  pwd
+  511  mkdir gitHub
+  512  ls
+  513  cd gitHub/
+  514  git init
+  515  touch HelloWorld.js
+  516  vim HelloWorld.js 
+  517  cat HelloWorld.js 
+  518  git commit -m "initial commit"
+  519  git add .
+  520  git commit -m "initial commit"
+  521  git remote add origin git@github.com:VPoshelyuk.git
+  522  /
+  523  git remote add origin git@github.com:VPoshelyuk/CISC3140-Lab6-gitHub.git
+  524  git remote -v
+  525  git remote remove origin
+  526  git remote add origin git@github.com:VPoshelyuk/CISC3140-Lab6-gitHub.git
+  527  git push -u origin master
+  528  vim HelloWorld.js
+  529  git add HelloWorld.js
+  530  git commit -m 'add current date printing'
+  531  git push origin
+  532  cd ..
+  533  touch session_git.log
+  534  history 100
